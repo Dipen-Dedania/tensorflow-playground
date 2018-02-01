@@ -567,10 +567,10 @@ def plot_conv_layer(layer, image):
     plt.show()
 
 
-# print_test_accuracy(show_example_errors=True)
+print_test_accuracy(show_example_errors=True)
 # plot_conv_weights(weights=weights_conv1)
 
-plot_conv_weights(weights=weights_conv2, input_channel=5)
+# plot_conv_weights(weights=weights_conv2, input_channel=5)
 # plot_conv_layer(layer=layer_conv2, image=image2)
 
 save_dir = 'checkpoints/'

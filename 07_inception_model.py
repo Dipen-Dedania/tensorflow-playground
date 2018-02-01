@@ -23,4 +23,4 @@ def classify(image_path):
 # image_path = os.path.join(inception.data_dir, 'cropped_panda.jpg')
 # classify(image_path)
 
-classify(image_path="images/giger.jpg")
+classify(image_path="images/spoon3.jpg")

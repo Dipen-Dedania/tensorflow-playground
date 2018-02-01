@@ -1,7 +1,9 @@
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import numpy as np
+import os
 from sklearn.metrics import confusion_matrix
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 from tensorflow.examples.tutorials.mnist import input_data
 data = input_data.read_data_sets("data/MNIST/", one_hot=True)
@@ -83,7 +85,7 @@ logits = tf.matmul(x, weights) + biases
 y_pred = tf.nn.softmax(logits)
 y_pred_cls = tf.argmax(y_pred, axis=1)
 
-cross_entropy = tf.nn.softmax_cross_entropy_with_logits(logits=logits,labels=y_true)
+cross_entropy = tf.nn.softmax_cross_entropy_with_logits_v2(logits=logits,labels=y_true)
 cost = tf.reduce_mean(cross_entropy)
 
 optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.1).minimize(cost)
@@ -219,8 +221,9 @@ def plot_weights():
     plt.show()
 
 
-optimize(num_iterations=50000)
+optimize(num_iterations=5000)
 print_accuracy()
+plot_example_errors()
 # plot_example_errors()
 # plot_weights()
 # print_confusion_matrix()
