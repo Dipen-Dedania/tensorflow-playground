@@ -18,8 +18,8 @@
 #
 ########################################################################
 
-from dataset import load_cached
-import download
+from Lib.dataset import load_cached
+import Lib.download as download
 import os
 
 ########################################################################

@@ -4,3 +4,5 @@ data/
 checkpoints/
 __pycache__/
 inception/
+video/**/*.jpg
+video/*.mp4

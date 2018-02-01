@@ -21,3 +21,4 @@ If you choose to go with GPU version, you might face issue with the driver compa
 pip install matplotlib
 pip install scipy
 pip install prettytensor
+pip install opencv-python
