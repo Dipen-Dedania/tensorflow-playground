@@ -8,6 +8,11 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 from tensorflow.examples.tutorials.mnist import input_data
 data = input_data.read_data_sets("data/MNIST/", one_hot=True)
 
+# One-hot encoding means writing categorical variables in a one-hot vector format,
+# where the vector is all-zero apart from one element.
+# The index of the non-zero element dictates the category.
+# E.g. category 4 could be written [0,0,0,0,1,0…] and category 0 as [1,0,0…]
+
 
 print("Size of:")
 print("- Training-set:\t\t{}".format(len(data.train.labels)))

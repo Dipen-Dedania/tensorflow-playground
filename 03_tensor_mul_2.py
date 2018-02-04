@@ -16,7 +16,7 @@ sess = tf.InteractiveSession()
 print('multiply result: \n {}'.format(result.eval()))
 
 ###########################################################
-# Now we will try with the matrix
+print('### Now we will try with the matrix')
 
 x3 = tf.constant([[1,2,3],[3,2,1]])
 print(x3.get_shape())
@@ -31,3 +31,7 @@ result2 = tf.matmul(x3, x4)
 sess = tf.InteractiveSession()
 print('After expanding x4 dimension: \n {}'.format(x4.eval()))
 print('matmul result2: \n {}'.format(result2.eval()))
+
+
+### Output
+# [ (1*1) + (0*2) + (2*3), (1*3) + (0*2) + (2*1)]
