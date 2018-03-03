@@ -26,3 +26,11 @@ pip install prettytensor
 pip install opencv-python
 pip install pillow
 ```
+
+
+# OpenCV
+
+Installation with windows
+```
+pip install opencv-python
+```
